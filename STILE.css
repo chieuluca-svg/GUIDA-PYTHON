@@ -1,0 +1,59 @@
+/* Palette colori caldi: arancio, pesca, cremato */
+:root{
+  --bg1: #FFFAF1; /* cremoso */
+  --bg2: linear-gradient(135deg,#FFD29D 0%, #FF8A55 100%); /* gradiente caldo */
+  --card: #FFF5EB;
+  --accent: #D9644A; /* rosso-arancio */
+  --muted: #6B4F3A; /* marrone scuro */
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg1);
+  color: var(--muted);
+  line-height:1.5;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:1.25rem;
+}
+.site-header{
+  background: var(--bg2);
+  color:white;
+  padding:2rem 0;
+  box-shadow: 0 4px 16px rgba(217,100,74,0.12);
+}
+.site-header h1{margin:0;font-size:1.75rem}
+.subtitle{opacity:0.95;margin-top:0.5rem}
+
+.card{
+  background: var(--card);
+  border-radius:8px;
+  padding:1rem 1.15rem;
+  margin-top:1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.card.small{background: rgba(217,100,74,0.05)}
+.card h2{color:var(--accent);margin-top:0}
+.code{
+  background: #FFF7F3;
+  border-left:4px solid var(--accent);
+  padding:0.75rem;
+  overflow:auto;
+  font-family: Consolas, "Courier New", monospace;
+  font-size:0.95rem;
+  margin:0.75rem 0;
+  border-radius:4px;
+}
+.tip{font-size:0.95rem;color:#7a5141}
+.callout{background:rgba(255,138,85,0.08);padding:0.6rem;border-radius:6px}
+
+.site-footer{padding:1rem 0;text-align:center;color:#8a5a46;font-size:0.9rem;margin-top:1.25rem}
+
+@media (max-width:600px){
+  .site-header{padding:1.25rem 0}
+  .container{padding:1rem}
+}
